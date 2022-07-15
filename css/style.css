@@ -18,7 +18,7 @@ h1 {
     margin-right: auto;
 }
 
-header {
+.headerContainer {
     display: flex;
     justify-content: flex-end;
     height: 7vh;
@@ -39,9 +39,75 @@ header {
     margin-right: .5rem;
 }
 
-h3 {
+h4 {
     font-size: .8rem;
     font-weight: lighter;
     z-index: 2;
     margin-right: 1rem;
+}
+
+.navbarContainer {
+    height: 6vh;
+    display: flex;
+    /* justify-content: center; */
+    justify-content: space-around;
+    background-color: rgba(12, 0, 122, 0.623);
+    align-items: center;
+}
+
+ /* .nav-icons {
+     padding-left: .8rem;
+    padding-right: .8rem; 
+}  */
+
+.home-icon {
+    margin-left: 12%;
+}
+
+.settings-icon {
+    margin-right: 12%;
+}
+
+.dashFlexContainer {
+    display: flex;
+}
+
+h2 {
+    padding: .75rem;
+    font-size: 1rem;
+}
+
+#dashboard {
+    border-left: solid lightgray 2px;
+    border-bottom: solid lightgray 2px;
+    flex-grow: 1;
+}
+
+h3 {
+    font-size: 1rem;
+    padding: .75rem;
+    text-transform: uppercase;
+}
+
+.trafficNavigation {
+    display: flex;
+    justify-content: space-around;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+ul li {
+    padding: .5rem;
+    list-style: none;
+    /* font-weight: bolder; */
+}
+
+.socialStats {
+    border-top: solid lightgray 2px;
+}
+
+.socials {
+    border: solid lightgray 2px;
+    border-radius: 5px;
+    margin: 0 .75rem 1rem .75rem;
 }
