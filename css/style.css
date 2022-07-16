@@ -161,7 +161,7 @@ ul li {
     align-items: center;
 }
 
-.newMembers, .recentActivity, .messageUser {
+.newMembers, .recentActivity, .messageUser, .settings {
     border-top: solid lightgray 2px;
 }
 
@@ -192,7 +192,27 @@ ul li {
     padding: .75rem;
     font-size: 1rem;
     width: 100%;
-    margin-left: .75rem;
-    margin-right: 3rem;
 }
 
+.message-user-search, .message-user-text, .send-message-button {
+    padding: 0 .75rem .75rem .75rem;
+}
+
+.form-area {
+    border: solid lightgray 2px;
+    background-color: whitesmoke;
+    border-radius: 7.5px;
+    width: 100%;
+    padding: .75rem;
+    font-size: 1rem;
+    height: 150px;
+}
+
+.send-button {
+    border: solid lightgray 2px;
+    border-radius: 7.5px;
+    width: 100%;
+    background-color:rgba(12, 0, 122, 0.623);
+    color: white;
+    padding: .85rem;
+}
