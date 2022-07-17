@@ -194,7 +194,7 @@ ul li {
     width: 100%;
 }
 
-.message-user-search, .message-user-text, .send-message-button {
+.message-user-search, .message-user-text, .send-message-button, .dropdown-list-container {
     padding: 0 .75rem .75rem .75rem;
 }
 
@@ -215,4 +215,46 @@ ul li {
     background-color:rgba(12, 0, 122, 0.623);
     color: white;
     padding: .85rem;
+}
+
+.dropdown-list {
+    width: 100%;
+    padding: .5rem;
+    border: lightgray solid 2px;
+    border-radius: 7.5px;
+    background-color: whitesmoke;
+    font-size: 1rem;
+    color: gray;
+}
+
+
+.bottom-buttons-container {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 .75rem 2rem .75rem;
+}
+
+.save-button {
+    border: solid lightgray 2px;
+    border-radius: 7.5px;
+    color: white;
+    background-color: rgba(12, 0, 122, 0.623);
+    padding: .5rem;
+    font-size: .85rem;
+    text-transform: uppercase;
+    flex-grow: 1;
+    margin-right: .5rem;
+
+}
+
+.cancel-button {
+    border: solid lightgray 2px;
+    border-radius: 7.5px;
+    color: white;
+    background-color: gray;
+    padding: .5rem;
+    font-size: .85rem;
+    text-transform: uppercase;
+    flex-grow: 1;
+    margin-left: .5rem;
 }
