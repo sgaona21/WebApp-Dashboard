@@ -231,7 +231,7 @@ ul li {
 .bottom-buttons-container {
     display: flex;
     justify-content: space-between;
-    margin: 0 .75rem 2rem .75rem;
+    margin:  .5rem .75rem 2rem .75rem;
 }
 
 .save-button {
@@ -263,4 +263,8 @@ ul li {
     display: flex;
     justify-content: space-between;
     margin: 0 .75rem .75rem .75rem;
+}
+
+.dropdown-list-container {
+    margin-top: 2rem;
 }
