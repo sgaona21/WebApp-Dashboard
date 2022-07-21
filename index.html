@@ -8,6 +8,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/toggle-switch.css">
     <title>Dashboard</title>
 </head>
 <body>
@@ -179,8 +180,33 @@
 
         <section class="settings">
             <h3>Settings</h3>
-                <p>Send Email Notifications</p>
-                <p>Set Profile to Public</p>
+                <div class="toggle-switch-container">
+                    <p>Send Email Notifications</p>
+                    <div class="toggle-switch">
+                        <label class="switch-light switch-ios" onclick="">
+                            <input type="checkbox">
+                            <span>
+                            <span>Off</span>
+                            <span>On</span>
+                            <a></a>
+                            </span>
+                        </label>
+                    </div>
+                </div>
+                <div class="toggle-switch-container">
+                    <p>Set Profile to Public</p>
+                    <div class="toggle-switch">
+                        <label class="switch-light switch-ios" onclick="">
+                            <input type="checkbox">
+                            <span>
+                            <span>Off</span>
+                            <span>On</span>
+                            <a></a>
+                            </span>
+                        </label>
+                    </div>
+                </div>
+
                 <div class="dropdown-list-container">
                     <select class="dropdown-list">
                         <option disabled selected>Select a Timezone</option>

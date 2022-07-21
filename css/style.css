@@ -258,3 +258,9 @@ ul li {
     flex-grow: 1;
     margin-left: .5rem;
 }
+
+.toggle-switch-container {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 .75rem .75rem .75rem;
+}
