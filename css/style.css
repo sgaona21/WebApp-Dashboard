@@ -268,3 +268,20 @@ ul li {
 .dropdown-list-container {
     margin-top: 2rem;
 }
+
+#alert {
+    display: flex;
+    justify-content: space-between;
+    background-color: rgba(12, 0, 122, 0.623);
+    border-radius: 7.5px;
+    color: whitesmoke;
+    font-size: .85rem;;
+    padding: .5rem;
+    margin: .75rem; 
+}
+
+#x-button:hover {
+    cursor: pointer;
+    text-transform: uppercase;
+    font-weight: bold;
+}

@@ -50,9 +50,14 @@
         <div class="dashFlexContainer">
         <h2>Dashboard</h2> <div id="dashboard"></div>
         </div>
-        <div class="alert" id="alert">
 
+        <div id="alert-container">
+            <div class="alert" id="alert">
+                <p><strong>Alert:</strong> You have unread messages</p>
+                <p id="x-button">x</p>
+            </div>
         </div>
+
         <section class="traffic">
             <h3>Traffic</h3>
             <ul class="trafficNavigation">
@@ -221,5 +226,7 @@
                     <button class="cancel-button">Cancel</button>
                 </div>
         </section> 
+
+        <script src="javascript/app.js"></script>
 </body>
 </html>
