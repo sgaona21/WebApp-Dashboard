@@ -290,7 +290,7 @@ ul li {
     border-radius: 3px;
 }
 
-#line-graph, #bar-graph {
+#line-graph, #bar-graph, #donut-graph {
     margin: 0 .75rem 0 .75rem;
 }
 
@@ -308,3 +308,50 @@ ul li {
     border-bottom: solid lightgray 2px;
     padding-bottom: 1rem;
 }
+
+#donut-graph {
+    padding-bottom: 1rem;
+}
+
+
+
+/* MEDIA QUERIES */
+@media screen and (min-width: 768px) {
+    
+    .main-grid-container {
+        display: grid;
+        grid-template-columns: 7.5% auto;
+        grid-template-areas: 
+        "nav main"
+        "nav main";
+    }
+
+    nav {
+        grid-area: nav;
+        max-width: 58px;
+    }
+
+    main {
+        grid-area: main;
+    }
+
+    .navbarContainer {
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+        justify-content: flex-start;
+        align-items: center;
+    }
+
+    .home-icon {
+        margin-left: 0;
+    }
+    .settings-icon {
+        margin-right: 0;
+    }
+    .nav-icons {
+        margin-top: 1.5rem;
+        margin-bottom: 1.5rem;
+    }
+
+  }
