@@ -294,3 +294,12 @@ ul li {
     margin: 0 .75rem 0 .75rem;
 }
 
+.traffic-breakdown {
+    cursor: pointer;
+}
+
+#hourly-breakdown {
+    background-color: lightgreen;
+    border-radius: 20px;
+    color: white;
+}

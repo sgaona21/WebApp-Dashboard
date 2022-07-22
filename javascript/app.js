@@ -49,8 +49,56 @@ const labels = [
 
 
 // Traffic hourly daily weekly monhtly breakdowns
-const trafficSelector = document.getElementById('hourly-breakdown');
-trafficSelector.addEventListener('click', () => {
-    trafficSelector.style.backgroundColor = "lightgreen";
-    trafficSelector.style.borderRadius = "20px";
+const hourlyBreakdown = document.getElementById('hourly-breakdown');
+hourlyBreakdown.addEventListener('click', () => {
+    hourlyBreakdown.style.backgroundColor = "lightgreen";
+    hourlyBreakdown.style.borderRadius = "20px";
+    hourlyBreakdown.style.color = "white";
+    dailyBreakdown.style.backgroundColor = 'white';
+    dailyBreakdown.style.color = "black";
+    weeklyBreakdown.style.backgroundColor = 'white';
+    weeklyBreakdown.style.color = "black";
+    monthlyBreakdown.style.backgroundColor = "white";
+    monthlyBreakdown.style.color = "black";
+})
+
+const dailyBreakdown = document.getElementById("daily-breakdown"); 
+dailyBreakdown.addEventListener('click', () => {
+    dailyBreakdown.style.backgroundColor = "lightgreen";
+    dailyBreakdown.style.borderRadius = "20px";
+    dailyBreakdown.style.color = "white";
+    hourlyBreakdown.style.backgroundColor = "white";
+    hourlyBreakdown.style.color = "black";
+    weeklyBreakdown.style.backgroundColor = 'white';
+    weeklyBreakdown.style.color = "black";
+    monthlyBreakdown.style.backgroundColor = "white";
+    monthlyBreakdown.style.color = "black";
+})
+
+const weeklyBreakdown = document.getElementById("weekly-breakdown"); 
+weeklyBreakdown.addEventListener('click', () => {
+    weeklyBreakdown.style.backgroundColor = "lightgreen";
+    weeklyBreakdown.style.borderRadius = "20px";
+    weeklyBreakdown.style.color = "white";
+    hourlyBreakdown.style.backgroundColor = "white";
+    hourlyBreakdown.style.color = "black";
+    dailyBreakdown.style.backgroundColor = 'white';
+    dailyBreakdown.style.color = "black";
+    monthlyBreakdown.style.backgroundColor = "white";
+    monthlyBreakdown.style.color = "black";
+})
+
+const monthlyBreakdown = document.getElementById("monthly-breakdown");
+monthlyBreakdown.addEventListener('click', () => {
+    monthlyBreakdown.style.backgroundColor = "lightgreen";
+    monthlyBreakdown.style.borderRadius = "20px";
+    monthlyBreakdown.style.color = "white";
+    hourlyBreakdown.style.backgroundColor = "white";
+    hourlyBreakdown.style.color = "black";
+    dailyBreakdown.style.backgroundColor = 'white';
+    dailyBreakdown.style.color = "black";
+    weeklyBreakdown.style.backgroundColor = 'white';
+    weeklyBreakdown.style.color = "black";
+    hourlyBreakdown.style.backgroundColor = "white";
+    hourlyBreakdown.style.color = "black";
 })
