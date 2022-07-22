@@ -1,31 +1,32 @@
 console.log("linked")
 
-const labels = [
-    '5:00am',
-    '9:00am',
-    '1:00pm',
-    '5:00pm',
-    '9:00pm',
-    '1:00am',
+const labelsDonut = [
+    'Desktop',
+    'Tablet',
+    'Phones',
   ];
 
-  const data = {
-    labels: labels,
+  const dataDonut = {
+    labels: labelsDonut,
     datasets: [{
-      label: 'Hourly Traffic',
-      backgroundColor: 'rgb(255, 99, 132)',
-      borderColor: 'rgb(255, 99, 132)',
-      data: [445, 854, 4522, 12654, 9545, 1200, 665],
+      label: 'Mobile Users',
+      backgroundColor: [
+        'rgb(39, 23, 177, 0.486)',
+        'rgb(54, 162, 235)',
+        'rgb(255, 205, 86)'
+      ],
+      borderColor: 'rgb(39, 23, 177, 0.486)',
+      data: [60, 30, 10],
     }]
   };
 
-  const config = {
-    type: 'line',
-    data: data,
+  const configDonut = {
+    type: 'doughnut',
+    data: dataDonut,
     options: {}
   };
 
-  const myChart = new Chart(
-    document.getElementById('myChart'),
-    config
+  const myDonutChart = new Chart(
+    document.getElementById('myDonutChart'),
+    configDonut
   );

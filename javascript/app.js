@@ -46,9 +46,67 @@ const labels = [
   );
 
 // BAR GRAPH
+const labelsBar = [
+    'Mon',
+    'Tues',
+    'Wed',
+    'Thur',
+    'Fri',
+    'Sat',
+  ];
 
-// PIE GRAPH
+  const dataBar = {
+    labels: labelsBar,
+    datasets: [{
+      label: 'Daily Traffic',
+      backgroundColor: 'rgb(39, 23, 177, 0.486)',
+      borderColor: 'rgb(39, 23, 177, 0.486)',
+      data: [5400, 6500, 3500, 8500, 4500, 3600,],
+    }]
+  };
 
+  const configBar = {
+    type: 'bar',
+    data: dataBar,
+    options: {}
+  };
+
+  const myBarChart = new Chart(
+    document.getElementById('myBarChart'),
+    configBar
+  );
+
+// DONUT GRAPH
+const labelsDonut = [
+    'Desktop',
+    'Tablet',
+    'Phones',
+  ];
+
+  const dataDonut = {
+    labels: labelsDonut,
+    datasets: [{
+      label: 'Mobile Users',
+      backgroundColor: [
+        'rgb(39, 23, 177, 0.486)',
+        'rgb(54, 162, 235)',
+        'rgb(255, 205, 86)'
+      ],
+      borderColor: 'rgb(39, 23, 177, 0.486)',
+      data: [60, 30, 10],
+    }]
+  };
+
+  const configDonut = {
+    type: 'doughnut',
+    data: dataDonut,
+    options: {}
+  };
+
+  const myDonutChart = new Chart(
+    document.getElementById('myDonutChart'),
+    configDonut
+  );
 
 
 // Traffic hourly daily weekly monhtly breakdowns
