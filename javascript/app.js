@@ -10,6 +10,9 @@ closeButton.addEventListener('click', () => {
 
 
 
+
+
+
 // GRAPHS
 // LINE GRAPH
 const labels = [
