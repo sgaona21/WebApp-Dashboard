@@ -284,4 +284,13 @@ ul li {
     cursor: pointer;
     text-transform: uppercase;
     font-weight: bold;
+    background-color: rgba(245, 245, 245, 0.493);
+    color: rgba(12, 0, 122, 0.623);
+    padding: 0 .25rem 0 .25rem;
+    border-radius: 3px;
 }
+
+#line-graph {
+    margin: 0 .75rem 0 .75rem;
+}
+

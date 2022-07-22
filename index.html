@@ -61,11 +61,14 @@
         <section class="traffic">
             <h3>Traffic</h3>
             <ul class="trafficNavigation">
-                <li>Hourly</li>
-                <li>Daily</li>
-                <li>Weekly</li>
-                <li>Monthly</li>
+                <li class="traffic-breakdown" id="hourly-breakdown">Hourly</li>
+                <li class="traffic-breakdown daily-breakdown">Daily</li>
+                <li class="traffic-breakdown weekly-breakdown">Weekly</li>
+                <li class="traffic-breakdown monthly-breakdown">Monthly</li>
             </ul>
+            <div id="line-graph">
+                <canvas id="myChart"></canvas>
+            </div>
         </section>    
 
         <section class="dailyTraffic">
@@ -226,7 +229,8 @@
                     <button class="cancel-button">Cancel</button>
                 </div>
         </section> 
-
+        <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
         <script src="javascript/app.js"></script>
+        
 </body>
 </html>
