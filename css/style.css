@@ -327,6 +327,19 @@ ul li {
     left: 17px;
 }
 
+.bell-animation:hover {
+    animation-name: rotate;
+    animation-duration: 1s;
+  }
+  
+  @keyframes rotate {
+    50% {
+      transform: rotate(20deg);
+      transition: transform .3s ease-in;
+    }
+   
+  }
+
 
 
 
