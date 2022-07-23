@@ -322,6 +322,8 @@ ul li {
 
 
 /* MEDIA QUERIES */
+
+/* 768px */
 @media screen and (min-width: 768px) {
     
     .main-grid-container {
@@ -441,4 +443,15 @@ ul li {
     .toggle-switch {
         margin-right: 55%;
     }
+
+    .trafficNavigation {
+        margin-right: .75rem;
+    }
+  }
+
+
+/* 1024PX */
+  @media screen and (min-width: 1024px) {
+
+    
   }
