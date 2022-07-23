@@ -453,5 +453,30 @@ ul li {
 /* 1024PX */
   @media screen and (min-width: 1024px) {
 
-    
+        .fullscreen-grid-container {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+        }
+
+        .toggle-switch {
+            margin-right: 35%;
+        }
+
+        .bottom-buttons-container {
+            margin-bottom: 1rem;
+        }
+
+        .save-button, .cancel-button {
+            padding: .85rem;
+  
+        }
+
+        .dropdown-list-container {
+            padding-top: 1rem;
+            padding-bottom: .5rem;
+        }
+
+        .newMembers, .messageUser {
+            border-right: solid lightgray 2px;
+        }
   }
