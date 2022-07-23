@@ -322,7 +322,7 @@ ul li {
     
     .main-grid-container {
         display: grid;
-        grid-template-columns: 7.5% auto;
+        grid-template-columns: 6vh auto;
         grid-template-areas: 
         "nav main"
         "nav main";
@@ -354,6 +354,58 @@ ul li {
     .nav-icons {
         margin-top: 1.5rem;
         margin-bottom: 1.5rem;
+    }
+
+    #traffic-options-merge {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .bar-pie-merge {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .dailyTraffic {
+        border-bottom: none;
+        border-right: solid lightgray 2px;
+        display: flex;
+        flex-direction: column; 
+    }
+
+    #bar-graph {
+        margin-top: auto;
+        margin-bottom: auto;
+    }
+
+    #myDonutChart, #myBarChart {
+        max-height: 300px;
+    }
+
+    .socialStatsContainer {
+       display: grid;
+       grid-template-columns: 1fr 1fr 1fr;
+    }
+   
+    .insta-widget {
+        margin-left: .25rem;
+        margin-right: .25rem;
+    }
+
+    .fb-widget {
+        margin-left: 0;
+        margin-right: .25rem;
+    }
+
+    .twitter-widget {
+        margin-right: 0;
+        margin-left: .25rem;
+    }
+
+    .socialStatsContainer {
+        margin-left: .75rem;
+        margin-right: .75rem;
     }
 
   }

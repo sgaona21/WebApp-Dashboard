@@ -60,36 +60,40 @@
             </div>
 
             <section class="traffic">
-                <h3>Traffic</h3>
-                <ul class="trafficNavigation">
-                    <li class="traffic-breakdown" id="hourly-breakdown">Hourly</li>
-                    <li class="traffic-breakdown" id="daily-breakdown">Daily</li>
-                    <li class="traffic-breakdown" id="weekly-breakdown">Weekly</li>
-                    <li class="traffic-breakdown" id="monthly-breakdown">Monthly</li>
-                </ul>
+                <div id="traffic-options-merge">
+                    <h3>Traffic</h3>
+                    <ul class="trafficNavigation">
+                        <li class="traffic-breakdown" id="hourly-breakdown">Hourly</li>
+                        <li class="traffic-breakdown" id="daily-breakdown">Daily</li>
+                        <li class="traffic-breakdown" id="weekly-breakdown">Weekly</li>
+                        <li class="traffic-breakdown" id="monthly-breakdown">Monthly</li>
+                    </ul>
+                </div>    
                 <div id="line-graph">
                     <canvas id="myChart"></canvas>
                 </div>
             </section>    
 
-            <section class="dailyTraffic">
-                <h3>Daily Traffic</h3>
-                <div id="bar-graph">
-                    <canvas id="myBarChart"></canvas>
-                </div>
-            </section> 
+            <div class="bar-pie-merge">    
+                <section class="dailyTraffic">
+                    <h3 class="daily-traffic-title">Daily Traffic</h3>
+                    <div id="bar-graph">
+                        <canvas id="myBarChart"></canvas>
+                    </div>
+                </section> 
 
-            <section class="mobileUsers">
-                <h3>Mobile Users</h3>
-                <div id="donut-graph">
-                    <canvas id="myDonutChart"></canvas>
-                </div>
-            </section> 
+                <section class="mobileUsers">
+                    <h3>Mobile Users</h3>
+                    <div id="donut-graph">
+                        <canvas id="myDonutChart"></canvas>
+                    </div>
+                </section> 
+            </div>    
 
             <section class="socialStats">
                 <h3>Social Stats</h3>
                     <div class="socialStatsContainer">
-                        <div class="social-widgets">
+                        <div class="social-widgets fb-widget">
                             <div class="a">
                                 <div class="logo-outline">
                                     <svg class="svg-logo" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
@@ -101,7 +105,7 @@
                             <p class="c">10,320</p>
                         </div>
 
-                        <div class="social-widgets">
+                        <div class="social-widgets insta-widget">
                             <div class="a">
                                 <div class="logo-outline">
                                     <svg class="svg-logo" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
@@ -112,7 +116,7 @@
                             <p class="b">Instagram</p>
                             <p class="c">16,445</p>
                         </div>
-                        <div class="social-widgets">
+                        <div class="social-widgets twitter-widget">
                             <div class="a">
                                 <div class="logo-outline">
                                     <svg class="svg-logo" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
