@@ -354,10 +354,14 @@ ul li {
         display: grid;
         grid-template-columns: 6vh auto;
         grid-template-areas: 
+        "header header"
         "nav main"
         "nav main";
     }
 
+    header {
+        grid-area: header;
+    }
     nav {
         grid-area: nav;
         max-width: 58px;
