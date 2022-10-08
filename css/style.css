@@ -421,7 +421,7 @@ ul li {
        display: grid;
        grid-template-columns: 1fr 1fr 1fr;
     }
-   
+
     .insta-widget {
         margin-left: .25rem;
         margin-right: .25rem;
@@ -475,6 +475,10 @@ ul li {
     .trafficNavigation {
         margin-right: .75rem;
     }
+    #line-graph {
+        max-width: 95%;
+        margin: auto;
+    }
   }
 
 
@@ -506,5 +510,10 @@ ul li {
 
         .newMembers, .messageUser {
             border-right: solid lightgray 2px;
+        }
+
+        #line-graph {
+            max-width: 70%;
+            margin: auto;
         }
   }
