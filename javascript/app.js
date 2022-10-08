@@ -16,6 +16,10 @@ closeButton.addEventListener('click', () => {
 
 
 // GRAPHS
+
+const hourlyChart = document.getElementById("myChart");
+const dailyChart = document.getElementById("myChartDaily");
+
 // LINE GRAPH
 const labels = [
     '5:00am',
@@ -46,6 +50,41 @@ const labels = [
     document.getElementById('myChart'),
     config
   );
+
+  //LINE GRAPH DAILY
+  const labelsDaily = [
+    'Monday',
+    'Tuesday',
+    'Wednesday',
+    'Thursday',
+    'Friday',
+    'Saturday',
+    'Sunday',
+  ];
+
+  const dataDaily = {
+    labels: labelsDaily,
+    datasets: [{
+      label: 'Daily Traffic',
+      backgroundColor: 'rgb(39, 23, 177, 0.486)',
+      borderColor: 'rgb(39, 23, 177, 0.486)',
+      data: [10000, 10500, 11200, 12654, 9545, 1200, 900],
+    }]
+  };
+
+  const configDaily = {
+    type: 'line',
+    data: dataDaily,
+    options: {}
+  };
+
+  const myChartDaily = new Chart(
+    document.getElementById('myChartDaily'),
+    configDaily
+  );
+
+
+
 
 // BAR GRAPH
 const labelsBar = [
@@ -123,6 +162,8 @@ hourlyBreakdown.addEventListener('click', () => {
     weeklyBreakdown.style.color = "black";
     monthlyBreakdown.style.backgroundColor = "white";
     monthlyBreakdown.style.color = "black";
+    dailyChart.style.display = "none";
+    hourlyChart.style.display = "block";
 })
 
 const dailyBreakdown = document.getElementById("daily-breakdown"); 
@@ -136,6 +177,8 @@ dailyBreakdown.addEventListener('click', () => {
     weeklyBreakdown.style.color = "black";
     monthlyBreakdown.style.backgroundColor = "white";
     monthlyBreakdown.style.color = "black";
+    hourlyChart.style.display = "none";
+    dailyChart.style.display = "block";
 })
 
 const weeklyBreakdown = document.getElementById("weekly-breakdown"); 
@@ -184,3 +227,8 @@ send.addEventListener('click', () => {
   alert(`Message successfully sent to: ${user.value}`);
   }
   });
+
+
+  if (hourlyBreakdown.style.backgroundColor = "lightgreen") {
+    dailyChart.style.display = "none";
+  }
