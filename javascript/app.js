@@ -19,8 +19,10 @@ closeButton.addEventListener('click', () => {
 
 const hourlyChart = document.getElementById("myChart");
 const dailyChart = document.getElementById("myChartDaily");
+const weeklyChart = document.getElementById("myChartWeekly");
+const monthlyChart = document.getElementById("myChartMonthly");
 
-// LINE GRAPH
+// LINE GRAPH HOURLY
 const labels = [
     '5:00am',
     '9:00am',
@@ -82,6 +84,68 @@ const labels = [
     document.getElementById('myChartDaily'),
     configDaily
   );
+
+    //LINE GRAPH WEEKLY
+    const labelsWeekly = [
+      '10/3/2022',
+      '10/10/2022',
+      '10/17/2022',
+      '10/24/2022',
+      '10/31/2022',
+    ];
+  
+    const dataWeekly = {
+      labels: labelsWeekly,
+      datasets: [{
+        label: 'Weekly Traffic',
+        backgroundColor: 'rgb(39, 23, 177, 0.486)',
+        borderColor: 'rgb(39, 23, 177, 0.486)',
+        data: [45000, 43500, 50200, 55654, 59545],
+      }]
+    };
+  
+    const configWeekly = {
+      type: 'line',
+      data: dataWeekly,
+      options: {}
+    };
+  
+    const myChartWeekly = new Chart(
+      document.getElementById('myChartWeekly'),
+      configWeekly
+    );
+
+    //LINE GRAPH MONTHLY
+  const labelsMonthly = [
+    'July',
+    'August',
+    'September',
+    'October',
+    'November',
+    'December',
+  ];
+
+  const dataMonthly = {
+    labels: labelsMonthly,
+    datasets: [{
+      label: 'Monthly Traffic',
+      backgroundColor: 'rgb(39, 23, 177, 0.486)',
+      borderColor: 'rgb(39, 23, 177, 0.486)',
+      data: [125000, 225000, 175000, 325000, 144000, 275000],
+    }]
+  };
+
+  const configMonthly = {
+    type: 'line',
+    data: dataMonthly,
+    options: {}
+  };
+
+  const myChartMonthly = new Chart(
+    document.getElementById('myChartMonthly'),
+    configMonthly
+  );
+
 
 
 
@@ -164,6 +228,8 @@ hourlyBreakdown.addEventListener('click', () => {
     monthlyBreakdown.style.color = "black";
     dailyChart.style.display = "none";
     hourlyChart.style.display = "block";
+    weeklyChart.style.display = "none";
+    monthlyChart.style.display = "none";
 })
 
 const dailyBreakdown = document.getElementById("daily-breakdown"); 
@@ -179,6 +245,8 @@ dailyBreakdown.addEventListener('click', () => {
     monthlyBreakdown.style.color = "black";
     hourlyChart.style.display = "none";
     dailyChart.style.display = "block";
+    weeklyChart.style.display = "none";
+    monthlyChart.style.display = "none";
 })
 
 const weeklyBreakdown = document.getElementById("weekly-breakdown"); 
@@ -192,6 +260,10 @@ weeklyBreakdown.addEventListener('click', () => {
     dailyBreakdown.style.color = "black";
     monthlyBreakdown.style.backgroundColor = "white";
     monthlyBreakdown.style.color = "black";
+    dailyChart.style.display = "none";
+    hourlyChart.style.display = "none";
+    weeklyChart.style.display = "block";
+    monthlyChart.style.display = "none";
 })
 
 const monthlyBreakdown = document.getElementById("monthly-breakdown");
@@ -207,6 +279,10 @@ monthlyBreakdown.addEventListener('click', () => {
     weeklyBreakdown.style.color = "black";
     hourlyBreakdown.style.backgroundColor = "white";
     hourlyBreakdown.style.color = "black";
+    monthlyChart.style.display = "block";
+    hourlyChart.style.display = "none";
+    dailyChart.style.display = "none";
+    weeklyChart.style.display = "none";
 })
 
 
@@ -231,4 +307,7 @@ send.addEventListener('click', () => {
 
   if (hourlyBreakdown.style.backgroundColor = "lightgreen") {
     dailyChart.style.display = "none";
+    weeklyChart.style.display = "none";
+    monthlyChart.style.display = "none";
   }
+
